@@ -2,11 +2,10 @@
 --primaryColor: black;
 --secondaryColor: #E39D45;
 --textColor: beige;
-
 }
 body{
-    background-color: var(--primaryColor)
-   ; padding: 0;
+    background-color: var(--primaryColor);
+    padding: 0;
     margin: 0;
     color: var(--textColor);
 }
@@ -35,7 +34,6 @@ align-items: center;
 }
 .nav{
 width: 100%;
-/*position: fixed;*/
 display: flex;
 justify-content:center;
 flex-direction: row;
@@ -46,19 +44,20 @@ color: var(--textColor);
 .liste-nav div li{
     display: inline;
     padding: 15px;
+    cursor: pointer;
 }
 .liste-nav a{
 color: var(--textColor);
 text-decoration:none;
+cursor: pointer;
 }
 
 .liste-nav a:hover{
     color: var(--secondaryColor);
     text-decoration:none;
+  
     }
 /******* END NAV ***/
-
-
  /**************** main ********************/
 /**************** plats *****************/
 #plats-container{
@@ -66,7 +65,7 @@ text-decoration:none;
      grid-template-rows: repeat(2,1fr);
      grid-template-columns: repeat(3,1fr);
           object-fit: fill;
-          column-gap: 2px;
+          column-gap: 2px;  
     }
     #plats-container div img:hover{    
         cursor: pointer;
@@ -98,9 +97,9 @@ text-decoration:none;
 /************** reservation **************/
 #reservation-container{
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    padding: 10px 20px;
-    width: 100%; 
+    padding: 10px 20px; 
     background-color: var(--secondaryColor);
 }
 #reservation-container div{
@@ -114,14 +113,14 @@ padding-bottom: 10px ;
 }
 .separation-reserv{
     width: 2px;
-    height: 100;
+    height: 300px;
     border-right: var(--textColor) solid 1px;
 }
 /************** about us ******************/
 #aboutUS-container{
-    width: 100%;
+
     background-color: var(--primaryColor);
-    padding: 10px 20px;
+    padding: 10px 35px;
     text-align: center;
     color: var(--secondaryColor);
  }
@@ -129,18 +128,13 @@ padding-bottom: 10px ;
      text-align: right;
      padding: 10px 0;
  }
- /*FIX*/
- .toTheTop i{
-     padding-right: 3%;
- }
  .adresse{
      color: var(--textColor);
  }
 
 /************************ SOCIAL *********/
 #social-container{
-    padding: 10px 20px;
-    width: 100%; 
+    padding: 10px 35px;
     background-color: var(--secondaryColor);
  }
  #social-container a{
@@ -158,6 +152,7 @@ figcaption{
     text-align: center;
     font-weight: bold;
     padding-bottom: 10px;
+    font-size: 1.2em;
 }
 .img-team{
     width: 350px;
@@ -212,6 +207,10 @@ figcaption{
     .C3 {
       border-right: var(--textColor) solid 1px;
     }
+    /*FIX NOS RESEAUX SOCIAUX */
+    .C4{
+        padding-left: 10px;
+    }
     .footer-container ul {
       list-style: none;
       padding: 0;
@@ -233,124 +232,56 @@ figcaption{
     }
     /***************** END FOOTER */
 
-/***************** MEDIA *******************/
-@media only screen and (max-width: 1160px) {    
-    .nav{
-        width: 300px;
-        justify-content:flex-start;
-        flex-direction: column;  
-        font-weight: bold;   
-        height: 100vh;
-        }
-        .liste-nav{  
-            display: unset;
-            display: flex;
-           flex-direction: column;
-         justify-content:flex-start;
-         align-items: unset;
-         }
-         .logo{
-             margin: 0 40px 40px 0;     
-        }
-        .liste-nav div li{
-            display: block;
-            padding: 15px;
-        }
-.mobile{
-    display: flex;
-    flex-direction: row;
-}
-.section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-    .liste-nav a:hover{
-        color: var(--primaryColor);
-        text-decoration:none;
-        
-        }
-      .navSelect:hover{
-            background-color: var(--secondaryColor);
-        }
-
-/****main */
-#plats-container{
-
-     grid-template-rows: repeat(3,1fr);
-     grid-template-columns: repeat(2,1fr);
-
-    }
-    #team{
-        display: flex;
-        flex-direction: column;
-        justify-content: unset;
-        align-items: center;
-        padding: 10px 20px 150px 20px;
-    }
-
-    #social{
-        padding: 10px 15%;
-        display:flex;
-        justify-content: space-between
-    }
-
-    #reservation-container{
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0px;
-        width: 100%; 
-        background-color: var(--secondaryColor);
-    }
-
-/***** footer **/
-.footer-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 10%;
-    min-height: 500px; /*todelete*/
-  }
-  .footer-cat {
-    width: 100%;
-    min-height: 120px; /*todelete*/
-  }
-  .C1,
-  .C2,
-  .C3,
-  .C4 {
-    display: flex;
-    justify-content: center;
-  }
-  /* BORDERS */
-  .C1,
-  .C2,
-  .C3 {
-    border-right: none;
-    border-bottom: var(--textColor) solid 1px;
-  }
-  .footer-logo {
-    padding: 10% 0;
-  }
-  .social {
-    flex-direction: row;
-  }
-.copyright {
-  padding: 5px 0 5px 0; 
-}
-
-}/*end media*/
 
 /**** mobile ***/
 @media only screen and (max-width: 768px) {
+    
+    /** FIX **/
+    .section{
+        padding-left: unset;
+    }
     .nav{
-        z-index: 999;
+      z-index: 999;
       position: absolute;
       width: 48px;
       height: 50px;
       overflow: hidden;
+      justify-content:flex-start;
+      flex-direction: column;   
    }
+   .liste-nav{  
+    display: unset;
+    display: flex;
+   flex-direction: column;
+ justify-content:flex-start;
+ align-items: unset;
+ }
+ .logo{
+     margin: 0 40px 40px 0;     
+}
+.liste-nav div li{
+    display: block;
+    padding: 15px;
+}
+.mobile{
+display: flex;
+flex-direction: row;
+}
+.liste-nav a:hover{
+color: var(--primaryColor);
+text-decoration:none;
+}
+.navSelect:hover{
+    background-color: var(--secondaryColor);
+}
+#plats-container{
+grid-template-rows: repeat(3,1fr);
+grid-template-columns: repeat(2,1fr);
+}
+#aboutUS-container{
+    margin: 0;
+    padding: 0;
+}
     .burger-menu{   
         display: block;
     }
@@ -375,13 +306,63 @@ figcaption{
         flex-direction: column;
         align-items: center; 
         padding: 10px 20px;
-        width: 100%; 
         background-color: var(--secondaryColor);
     }
 .form{
     text-align: center;
 }
+#team{
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    padding: 10px 20px 150px 20px;
+}
 
+#social{
+    padding: 10px 15%;
+    display:flex;
+    justify-content: space-between
+}
+/*** FOOTER */
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10%;
+    min-height: 500px;
+  }
+  .footer-cat {
+    width: 100%;
+    min-height: 120px;
+  }
+  .C1,
+  .C2,
+  .C3,
+  .C4 {
+    display: flex;
+    justify-content: center;
+  }
+  .C1,
+  .C2,
+  .C3 {
+    border-right: none;
+    border-bottom: var(--textColor) solid 1px;
+  }
+  
+  .footer-logo {
+    padding: 10% 0;
+  }
+  .social {
+    flex-direction: row;
+  }
+  #social-container{
+      text-align: center;
+  }
+.copyright {
+  padding: 5px 0 5px 0; 
+}
 }/** end media */
 
 
