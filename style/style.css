@@ -226,10 +226,11 @@ figcaption{
     }
     .copyright {
       text-align: center;
-      color: var(--primaryColor);
+      color: var(--textColor);
       padding: 5px 0;
       font-weight: bolder;
     }
+   
     /***************** END FOOTER */
 
 
@@ -360,9 +361,7 @@ grid-template-columns: repeat(2,1fr);
   #social-container{
       text-align: center;
   }
-.copyright {
-  padding: 5px 0 5px 0; 
-}
+
 }/** end media */
 
 
