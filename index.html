@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,100 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="script/index.js"></script>
-    <script src="https://kit.fontawesome.com/b760ce3519.js" ></script>
+    <script src="https://kit.fontawesome.com/b760ce3519.js"></script>
 </head>
+
 <body>
 
-  <main>
-  
- <div class="mobile">
-<div class="nav">
-<ul class="liste-nav">
-    <div class="logo"><img src="img/logo.png" alt=""></div>
-   <a href="#plats-container"> <div class="navSelect"><li>Menus</li></div></a>
-   <a href="#contact-container"> <div class="navSelect"><li>Réservations</li></div></a>
-   <a href="#contact-container"> <div class="navSelect"><li>Horaires</li></div></a>
-   <a href="#aboutUS-container"> <div class="navSelect"><li>Ou sommes nous</li></div></a>
-   <a href="#aboutUS-container"> <div class="navSelect"><li>Notre equipe</li></div></a>
-   <a href="#social-container"> <div class="navSelect"><li>Réseaux Sociaux</li></div></a>
-</ul>
+    <main>
 
-</div>
+        <div class="mobile">
+            
+            <div class="nav">
+                <div class="burger-menu"><i class="fas fa-bars fa-3x"></i></div>
+                <ul class="liste-nav">
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <a href="#plats-container">
+                        <div class="navSelect">
+                            <li>Menus</li>
+                        </div>
+                    </a>
+                    <a href="#reservation-container">
+                        <div class="navSelect">
+                            <li>Réservations</li>
+                        </div>
+                    </a>
+                    <a href="#aboutUS-container">
+                        <div class="navSelect">
+                            <li>Horaires</li>
+                        </div>
+                    </a>
+                    <a href="#aboutUS-container">
+                        <div class="navSelect">
+                            <li>Ou sommes nous</li>
+                        </div>
+                    </a>
+                    <a href="#aboutUS-container">
+                        <div class="navSelect">
+                            <li>Notre equipe</li>
+                        </div>
+                    </a>
+                    <a href="#social-container">
+                        <div class="navSelect">
+                            <li>Réseaux Sociaux</li>
+                        </div>
+                    </a>
+                </ul>
 
-<div class="section">
+            </div>
 
-<div id="plats-container">
-<div class="plat1"><img src="img/plats/01.jpg" alt=""></div>
-<div class="plat2"><img src="img/plats/02.jpg" alt=""></div>
-<div class="plat3"><img src="img/plats/03.jpg" alt=""></div>
-<div class="plat4"><img src="img/plats/04.jpg" alt=""></div>
-<div class="plat5"><img src="img/plats/05.jpg" alt=""></div>
-<div class="plat6"><img src="img/plats/06.jpg" alt=""></div>
+            <div class="section">
 
-
-</div>
-<div id="contact-container">
+                <div id="plats-container">
+                    <div><img src="img/plats/01.jpg" alt=""></div>
+                    <div><img src="img/plats/02.jpg" alt=""></div>
+                    <div><img src="img/plats/03.jpg" alt=""></div>
+                    <div><img src="img/plats/04.jpg" alt=""></div>
+                    <div><img src="img/plats/05.jpg" alt=""></div>
+                    <div><img src="img/plats/06.jpg" alt=""></div>
 
 
-
-</div>
-<div id="aboutUS-container">
-
-    <h4>Nous trouver :</h4>
+                </div>
+                <div id="reservation-container">
 
 
-</div>
-<div id="social-container"></div>
-</div>
 
-</div>   
-  </main>
+                </div>
+                <div id="aboutUS-container">
+                    <div class="horaires">
+                        <h4>Nos horaires :</h4>
+                        <p>Ouvert de 11h à 23h du mardi au samedi.</p>
+                    </div>
+                    <h4>Nous trouver :</h4>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.597805117741!2d4.80484133240404!3d45.77061045848436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20Formation!5e0!3m2!1sfr!2sfr!4v1640085376015!5m2!1sfr!2sfr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div id="social-container"></div>
+            </div>
+
+        </div>
+    </main>
 
 
-  <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-});
-</script>
+    </script>
 </body>
+
 </html>
