@@ -16,7 +16,7 @@
     <main>
 
         <div class="mobile">
-            
+
             <div class="nav" id="top">
                 <div class="burger-menu"><i class="fas fa-bars fa-3x"></i></div>
                 <ul class="liste-nav">
@@ -41,12 +41,12 @@
                             <li>Ou sommes nous</li>
                         </div>
                     </a>
-                    <a href="#aboutUS-container">
+                    <a href="#social-container">
                         <div class="navSelect">
                             <li>Notre equipe</li>
                         </div>
                     </a>
-                    <a href="#social-container">
+                    <a href="#footer">
                         <div class="navSelect">
                             <li>Réseaux Sociaux</li>
                         </div>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="section">
-<!--     PLATS    -->
+                <!--     PLATS    -->
                 <div id="plats-container">
                     <div class="img-container">
                         <img src="img/plats/01.jpg" alt="Plat#1">
@@ -84,29 +84,47 @@
                     </div>
 
 
-<!--     RESERVATION   -->
+                    <!--     RESERVATION   -->
                 </div>
                 <div id="reservation-container">
-<h4>Réserver :</h4>
-<div class="form">
-<form action="#">
+                    <h4>Réserver : </h4>
+                    <div class="form">
+                        <form action="#">
+                            <div>
+                                <label for="nom">Nom:</label>
+                                <input type="text" id="nom">
+                            </div>
+                            <div>
+                                <label for="prenom">Prénom:</label>
+                                <input type="text" id="prenom">
+                            </div>
 
-    <input type="text">
+                            <div>
+                                <label for="numero">Numéro de commande:</label>
+                                <input type="text" id="numero">
+                            </div>
+                            <div>
+                                <label for="date">Heure d'arrivée:</label>
+                                <input type="date" id="date">
+                            </div>
+                            <p>* champ Obligatoire.</p>
+                            <div>
+                                <button type="submit">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
 
-
-</form></div>
-
-                    <div class="toTheTop"><a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a></div>
                 </div>
-<!--     ABOUT US    -->
+                <!--     ABOUT US    -->
                 <div id="aboutUS-container">
                     <div class="horaires">
                         <h4>Nos horaires :</h4>
-                        <p>Ouvert de 11h à 23h du mardi au samedi.</p>
+                        <p>Ouvert de <strong>11h à 23h </strong>du mardi au samedi.</p>
                     </div>
-                    <h4>Nous trouver :</h4>
+
 
                     <div class="map">
+                        <h4>Nous trouver :</h4>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.597805117741!2d4.80484133240404!3d45.77061045848436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20Formation!5e0!3m2!1sfr!2sfr!4v1640085376015!5m2!1sfr!2sfr"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -116,14 +134,81 @@
 
                 <!--     TEAM + SOCIAL   -->
                 <div id="social-container">
+                    <h4>Rencontrez notre équipe:</h4>
+
+<div id="team">
+
+    <figure>  <figcaption>Notre Barman</figcaption>
+       <div class="img-team"></div>
+      
+    </figure>
+    <figure>
+        <figcaption>Notre Chef</figcaption>
+        <div class="img-team"></div>
+     
+     </figure>
+     <figure>
+        <figcaption>Notre Serveur</figcaption>
+        <div class="img-team"></div>
+        
+     </figure>
+
+</div>
 
 
                     <div class="toTheTop"><a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a></div>
                 </div>
             </div>
-           
+
         </div>
     </main>
+
+    <footer>
+        <!-- FOOTER -->
+        <div class="footer-container" id="footer">
+          <div class="footer-cat C1">
+            <div class="footer-logo">
+              <img src="img/logo.png" alt="Logo" width="100%" />
+            </div>
+          </div>
+          <div class="footer-cat C2">
+            <h4>NAVIGATION</h4>
+            <ul>
+              <li><a href="#top">Accueil</a></li>
+              <li><a href="#plats-container">Nos plats</a></li>
+              <li><a href="#reservation-container">Réservations</a></li>
+              <li><a href="#team">Notre équipe</a></li>
+            </ul>
+          </div>
+          <div class="footer-cat C3">
+            <ul>
+              <li><a href="#">Vos informations personnelles</a></li>
+              <li><a href="#">Conditions générales de vente</a></li>
+            </ul>
+          </div>
+          <div class="footer-cat C4">
+            <h4>NOS RÉSEAUX SOCIAUX</h4>
+    
+            <ul class="social">
+              <a href="http://www.twitter.com" target="_blank"
+                ><i class="fab fa-twitter-square fa-2x"></i
+              ></a>
+              <a href="http://www.facebook.com" target="_blank"
+                ><i class="fab fa-facebook-square fa-2x"></i
+              ></a>
+              <a href="http://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram-square fa-2x"></i
+              ></a>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© 2021 - Eco location</div>
+        <!-- FOOTER END-->
+      </footer>
+
+
+
+
 
 
     <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
