@@ -4,7 +4,6 @@
 --textColor: beige;
 
 }
-
 body{
     background-color: var(--primaryColor)
    ; padding: 0;
@@ -18,13 +17,11 @@ h4{
     font-size: 1.5em;
     text-transform: uppercase; 
 }
-
 /****************** NAVIGATION ************/
 .burger-menu{
    display: none;
     padding-left: 2px;
 }
-
 .liste-nav{  
    list-style: none;
    display: inline;
@@ -42,19 +39,14 @@ width: 100%;
 display: flex;
 justify-content:center;
 flex-direction: row;
-
 text-transform: uppercase;
 background-color: var(--primaryColor);
 color: var(--textColor);
 }
-
-
 .liste-nav div li{
     display: inline;
     padding: 15px;
 }
-
-
 .liste-nav a{
 color: var(--textColor);
 text-decoration:none;
@@ -64,7 +56,6 @@ text-decoration:none;
     color: var(--secondaryColor);
     text-decoration:none;
     }
-
 /******* END NAV ***/
 
 
@@ -77,7 +68,6 @@ text-decoration:none;
           object-fit: fill;
           column-gap: 2px;
     }
-
     #plats-container div img:hover{    
         cursor: pointer;
     }
@@ -105,7 +95,6 @@ text-decoration:none;
         height: 25%;
         }
 /******* end plat **/
-
 /************** reservation **************/
 #reservation-container{
     display: flex;
@@ -114,7 +103,6 @@ text-decoration:none;
     width: 100%; 
     background-color: var(--secondaryColor);
 }
-
 #reservation-container div{
 padding-bottom: 10px ;
 }
@@ -124,16 +112,19 @@ padding-bottom: 10px ;
 #aboutUS-container a:hover{
     color: var(--textColor);
 }
-
+.separation-reserv{
+    width: 2px;
+    height: 100;
+    border-right: var(--textColor) solid 1px;
+}
 /************** about us ******************/
 #aboutUS-container{
     width: 100%;
     background-color: var(--primaryColor);
     padding: 10px 20px;
+    text-align: center;
     color: var(--secondaryColor);
  }
-
-
  .toTheTop{
      text-align: right;
      padding: 10px 0;
@@ -142,8 +133,8 @@ padding-bottom: 10px ;
  .toTheTop i{
      padding-right: 3%;
  }
- .map{
-     text-align: center;
+ .adresse{
+     color: var(--textColor);
  }
 
 /************************ SOCIAL *********/
@@ -162,7 +153,6 @@ padding-bottom: 10px ;
     display: flex;
     justify-content: center;
     padding: 10px 20px 15px 20px;
-
 }
 figcaption{
     text-align: center;
@@ -183,14 +173,11 @@ figcaption{
     display:flex;
     justify-content: space-between
 }
-
-
-
 /******END MAIN*****/
 
 /******************** FOOTER ***************/
 /******************************************************************************** FOOTER*/
-footer {
+    footer {
     color: var(--SecondaryColor);
     margin-top: 10px;
     }
@@ -247,8 +234,7 @@ footer {
     /***************** END FOOTER */
 
 /***************** MEDIA *******************/
-@media only screen and (max-width: 1160px) {
-    
+@media only screen and (max-width: 1160px) {    
     .nav{
         width: 300px;
         justify-content:flex-start;
@@ -256,26 +242,20 @@ footer {
         font-weight: bold;   
         height: 100vh;
         }
-
         .liste-nav{  
             display: unset;
             display: flex;
            flex-direction: column;
          justify-content:flex-start;
          align-items: unset;
-
          }
-
          .logo{
-             margin: 0 40px 40px 0;
-      
+             margin: 0 40px 40px 0;     
         }
-
         .liste-nav div li{
             display: block;
             padding: 15px;
         }
-
 .mobile{
     display: flex;
     flex-direction: row;
@@ -285,45 +265,16 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
-#plats-container{
-    width: 100%;
-    
-}
-     #contact-container{
-        width: 100%; 
-      
-
-     }
-     #aboutUS-container{
-        width: 100%;
-       
-      
-
-     }
-     #social-container{
-        width: 100%; 
-      
-    }
-
-
-   
-
-
     .liste-nav a:hover{
         color: var(--primaryColor);
         text-decoration:none;
         
         }
-       
-    
       .navSelect:hover{
             background-color: var(--secondaryColor);
         }
 
-
 /****main */
-
 #plats-container{
 
      grid-template-rows: repeat(3,1fr);
@@ -342,6 +293,14 @@ footer {
         padding: 10px 15%;
         display:flex;
         justify-content: space-between
+    }
+
+    #reservation-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px;
+        width: 100%; 
+        background-color: var(--secondaryColor);
     }
 
 /***** footer **/
@@ -377,20 +336,14 @@ footer {
   .social {
     flex-direction: row;
   }
-
 .copyright {
   padding: 5px 0 5px 0; 
 }
 
-
-
-
-}
+}/*end media*/
 
 /**** mobile ***/
-
 @media only screen and (max-width: 768px) {
-  
     .nav{
         z-index: 999;
       position: absolute;
@@ -398,30 +351,29 @@ footer {
       height: 50px;
       overflow: hidden;
    }
-    .burger-menu{
-     
+    .burger-menu{   
         display: block;
     }
-
     .nav:hover{
         width:250px ;
-        height: unset;
-      
-
+        height: unset;      
     }
     .nav:hover .burger-menu{
         display: none; 
     }
-    #plats-container div img:hover{
-      
-        cursor: pointer;
-      
+    #plats-container div img:hover{      
+        cursor: pointer;    
+    }
+    .separation-reserv{
+        width: 70%;
+        height: 2px;
+        border-top: var(--textColor) solid 1px;
+        border-right: unset;
     }
     #reservation-container{
         display: flex;
         flex-direction: column;
-align-items: center;
-       
+        align-items: center; 
         padding: 10px 20px;
         width: 100%; 
         background-color: var(--secondaryColor);
@@ -430,18 +382,7 @@ align-items: center;
     text-align: center;
 }
 
-}
-
-/************ END MEDIA */
-
-
-
-
-
-
-
-
-
+}/** end media */
 
 
 /**** animation ***/
@@ -449,7 +390,6 @@ align-items: center;
   from {
     transform: scale(1);
   }
-
   to{
       transform: scale(1.2);
   }
