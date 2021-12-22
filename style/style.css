@@ -153,14 +153,18 @@ figcaption{
     padding-bottom: 10px;
     font-size: 1.2em;
 }
-.img-team{
-    width: 350px;
-    height: 500px;
-    background-color: var(--primaryColor);
+ 
+#team div{
+overflow: hidden;
+
 }
-.img-team:hover{ 
-    background-color: var(--textColor);
+
+ 
+#team div>img:hover{
+  animation: img-scale 1s ease;
+
 }
+
 #social{
     padding: 10px 30%;
     display:flex;
