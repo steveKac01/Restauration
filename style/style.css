@@ -311,8 +311,8 @@ grid-template-columns: repeat(2,1fr);
         padding: 10px 20px;
         background-color: var(--secondaryColor);
     }
-.form{
-    text-align: center;
+.form-title{
+   text-align: center;
 }
 #team{
     display: flex;
