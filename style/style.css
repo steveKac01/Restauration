@@ -283,7 +283,7 @@ grid-template-columns: repeat(2,1fr);
 }
 #aboutUS-container{
     margin: 0;
-    padding: 0;
+    padding: 10px 35px;
 }
     .burger-menu{   
         display: block;
