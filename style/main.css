@@ -1,0 +1,15 @@
+@import url(footer.css);
+@import url(section.css);
+
+:root {
+  --primaryColor: black;
+  --secondaryColor: #dbb167;
+  --thirdColor: #e39d45;
+  --textColor: beige;
+}
+body {
+  background-color: var(--primaryColor);
+  background-color: beige;
+  padding: 0;
+  margin: 0;
+}

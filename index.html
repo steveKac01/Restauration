@@ -1,60 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restauration</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css" />
     <script src="script/index.js"></script>
     <script src="https://kit.fontawesome.com/b760ce3519.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
+    <!--                                             HEADER                             -->
+    <!--                                            MAIN                             -->
     <main>
-
-            <div class="nav" id="top">
-                <div class="burger-menu"><i class="fas fa-bars fa-3x"></i></div>
-                <ul class="liste-nav">
-                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
-                    <a href="#plats-container">
-                        <div class="navSelect">
-                            <li>Menus</li>
-                        </div>
-                    </a>
-                    <a href="#reservation-container">
-                        <div class="navSelect">
-                            <li>Réservations</li>
-                        </div>
-                    </a>
-                    <a href="#aboutUS-container">
-                        <div class="navSelect">
-                            <li>Horaires</li>
-                        </div>
-                    </a>
-                    <a href="#aboutUS-container">
-                        <div class="navSelect">
-                            <li>Ou sommes nous</li>
-                        </div>
-                    </a>
-                    <a href="#social-container">
-                        <div class="navSelect">
-                            <li>Notre equipe</li>
-                        </div>
-                    </a>
-                    <a href="#footer">
-                        <div class="navSelect">
-                            <li>Réseaux Sociaux</li>
-                        </div>
-                    </a>
-                </ul>
-
-            </div>
-
-            <div class="section">
-                <!--     PLATS    -->
-                <div id="plats-container">
+       <!--     PLATS    --><div id="plats-container">
+                <div class="gallery">
                     <div class="img-container">
                         <img src="img/plats/01.jpg" alt="Plat#1">
                         <div class="vignette">Plat #1</div>
@@ -78,156 +38,168 @@
                     <div class="img-container">
                         <img src="img/plats/06.jpg" alt="Plat#6">
                         <div class="vignette">Plat ECO +</div>
-                    </div>
+                    </div></div>
+      <!--     RESERVATION   -->
 
-                    <!--     RESERVATION   -->
-                </div>
-                <div id="reservation-container">
-                   
-                    <div class="horaires">
-                        <h4>Nos horaires :</h4>
-               <ul>
-                   <li>Lundi Fermé.</li>
-                   <li>Mardi de <strong> 11h à 23h.</strong></li>
-                   <li>Mercredi de <strong> 11h à 23h.</strong></li>
-                   <li>Jeudi de <strong> 11h à 23h.</strong></li>
-                   <li>Vendredi de <strong> 11h à 23h.</strong></li>
-                   <li>Samedi de <strong> 11h à 23h.</strong></li>
-                   <li>Dimanche Fermé.</li>
-               </ul>         
-                    </div>
-<div class="separation-reserv"></div>
-                   
-                    <div class="form"><div class="form-title">
-                        <h4>Réserver : </h4></div>
-                        <form action="#">
-                            <div>
-                                <label for="nom">Nom:</label>
-                                <input type="text" id="nom">
-                            </div>
-                            <div>
-                                <label for="prenom">Prénom:</label>
-                                <input type="text" id="prenom">
-                            </div>
+      <div id="reservation-container">
+        <div class="horaires-form">
+          <div class="horaires">
+            <h4>Nos horaires :</h4>
+            <ul>
+              <li>Lundi Fermé.</li>
+              <li>Mardi de <strong> 11h à 23h.</strong></li>
+              <li>Mercredi de <strong> 11h à 23h.</strong></li>
+              <li>Jeudi de <strong> 11h à 23h.</strong></li>
+              <li>Vendredi de <strong> 11h à 23h.</strong></li>
+              <li>Samedi de <strong> 11h à 23h.</strong></li>
+              <li>Dimanche Fermé.</li>
+            </ul>
+          </div>
 
-                            <div>
-                                <label for="numero">Numéro de commande:</label>
-                                <input type="text" id="numero">
-                            </div>
-                            <div>
-                                <label for="date">Heure d'arrivée:</label>
-                                <input type="date" id="date">
-                            </div>
-                            <p>* champ Obligatoire.</p>
-                            <div>
-                                <button type="submit">Envoyer</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-                <!--     ABOUT US    -->
-                <div id="aboutUS-container">
-                 
-                    <div class="map">
-                        <h4>Nous trouver :</h4>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.597805117741!2d4.80484133240404!3d45.77061045848436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20Formation!5e0!3m2!1sfr!2sfr!4v1640085376015!5m2!1sfr!2sfr"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                   
-               
-               <div class="adresse">
-                   <h2>RESTAURANT</h2>
-                   <p>36 Rue du Sergent Michel Berthet</p>
-                   <p>69009 Lyon</p>
-            </div>
-            <div class="toTheTop"><a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a></div>
-                </div>
-
-                <!--     TEAM + SOCIAL   -->
-                <div id="social-container">
-                    <h4>Rencontrez notre équipe:</h4>
-
-<div id="team">
-
-    <figure>  <figcaption>Notre Barman</figcaption>
-       <div><img src="img/team/barman.jpg" alt=""></div>
-      
-    </figure>
-    <figure>
-        <figcaption>Notre Chef</figcaption>
-        <div ><img src="img/team/chef.jpg" alt=""></div>
-     
-     </figure>
-     <figure>
-        <figcaption>Notre Serveur</figcaption>
-        <div ><img src="img/team/serveur.jpg" alt=""></div>
-        
-     </figure>
-
-</div>
-
-
-                    <div class="toTheTop"><a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a></div>
-                </div>
-                <footer>
-                 <!-- FOOTER -->
-        <div class="footer-container" id="footer">
-            <div class="footer-cat C1">
-              <div class="footer-logo">
-                <img src="img/logo.png" alt="Logo" width="100%" />
+          <div class="form">
+            <div class="form-title">
+              <div>
+                <h4>Réserver :</h4>
               </div>
             </div>
-            <div class="footer-cat C2">
-              <h4>NAVIGATION</h4>
-              <ul>
-                <li><a href="#top">Accueil</a></li>
-                <li><a href="#plats-container">Nos plats</a></li>
-                <li><a href="#reservation-container">Réservations</a></li>
-                <li><a href="#social-container">Notre équipe</a></li>
-              </ul>
-            </div>
-            <div class="footer-cat C3">
+            <form action="#">
+              <div>
+                <label for="nom">Nom:*</label>
+                <input type="text" id="nom" />
+              </div>
+              <div>
+                <label for="prenom">Prénom:*</label>
+                <input type="text" id="prenom" />
+              </div>
+
+              <div>
+                <label for="numero">Numéro de commande:*</label>
+                <input type="text" id="numero" />
+              </div>
+              <div>
+                <label for="date">Heure d'arrivée:*</label>
+                <input type="date" id="date" />
+              </div>
+              <p>* champ Obligatoire.</p>
+              <div>
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="toTheTop">
+          <a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        </div>
+      </div>
+      <!--     ABOUT US    -->
+      <div id="aboutUS-container">
+        <div class="map">
+          <h4>Nous trouver :</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.597805117741!2d4.80484133240404!3d45.77061045848436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20Formation!5e0!3m2!1sfr!2sfr!4v1640085376015!5m2!1sfr!2sfr"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="adresse">
+          <h2>RESTAURANT</h2>
+          <p>36 Rue du Sergent Michel Berthet</p>
+          <p>69009 Lyon</p>
+        </div>
+        <div class="toTheTop">
+          <a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        </div>
+      </div>
+      <!--TEAM-->
+      <div id="team">
+        <div class="title-team">
+          <h4>Rencontrez notre équipe:</h4>
+        </div>
+        <div class="team-photo">
+          <figure>
+            <figcaption>Notre Barman</figcaption>
+            <div><img src="img/team/barman.jpg" alt="Barman" /></div>
+          </figure>
+          <figure>
+            <figcaption>Notre Chef</figcaption>
+            <div><img src="img/team/chef.jpg" alt="Chef" /></div>
+          </figure>
+          <figure>
+            <figcaption>Notre Serveur</figcaption>
+            <div><img src="img/team/serveur.jpg" alt="Serveur" /></div>
+          </figure>
+        </div>
+        <div class="toTheTop">
+          <a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        </div>
+      </div>
+    </main>
+
+    <!--                                             FOOTER                              -->
+    <footer>
+      <div class="footer-container">
+        <div class="C1">
+          <div class="containerByCat">
+            <img src="img/logo.png" alt="Restaurant logo" />
+          </div>
+        </div>
+        <div class="C2">
+          <div class="footer-title"><h4>NAVIGATION</h4></div>
+          <div class="containerByCat">
+            <ul>
+              <li><a href="#top">Accueil</a></li>
+              <li><a href="#plats-container">Nos plats</a></li>
+              <li><a href="#reservation-container">Réservations</a></li>
+              <li><a href="#social-container">Notre équipe</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="C3">
+          <div class="footer-title"><h4>INFORMATIONS</h4></div>
+          <div class="containerByCat">
+            <div class="containerByCat">
               <ul>
                 <li><a href="#">Vos informations personnelles</a></li>
                 <li><a href="#">Conditions générales de vente</a></li>
               </ul>
             </div>
-            <div class="footer-cat C4">
-              <h4>NOS RÉSEAUX SOCIAUX</h4>
-      
-              <ul class="social">
-                <a href="http://www.twitter.com" target="_blank"
-                  ><i class="fab fa-twitter-square fa-2x"></i
-                ></a>
-                <a href="http://www.facebook.com" target="_blank"
-                  ><i class="fab fa-facebook-square fa-2x"></i
-                ></a>
-                <a href="http://www.instagram.com" target="_blank">
-                  <i class="fab fa-instagram-square fa-2x"></i
-                ></a>
-              </ul>
-            </div>
           </div>
-          <div class="copyright">Restauration © 2021 </div>
-          <!-- FOOTER END-->  </footer>
-            </div>
-
         </div>
-    </main>
+        <div class="C4">
+          <div class="footer-title"><h4>RÉSEAUX SOCIAUX</h4></div>
+          <div class="containerByCat">
+            <ul class="social">
+              <a href="http://www.twitter.com" target="_blank"
+                ><i class="fab fa-twitter-square fa-2x"></i
+              ></a>
+              <a href="http://www.facebook.com" target="_blank"
+                ><i class="fab fa-facebook-square fa-2x"></i
+              ></a>
+              <a href="http://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram-square fa-2x"></i
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Restauration @ 2021</div>
+    </footer>
 
+    <!-- SMOOTH SCROLLING -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
 
-    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>
