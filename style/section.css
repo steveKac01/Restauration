@@ -1,9 +1,3 @@
-:root {
-  --primaryColor: black;
-  --secondaryColor: #dbb167;
-  --textColor: beige;
-}
-
 main h4 {
   font-size: 1.5em;
   text-transform: uppercase;
@@ -29,6 +23,7 @@ img {
 /**************** plats *****************/
 #plats-container {
   color: var(--textColor);
+  background-color: var(--primaryColor);
 }
 .gallery {
   display: grid;
