@@ -1,9 +1,7 @@
 /*** SMALL NAV ***/
 
-.small-nav {
+.top-bar {
   padding: 10px 20px;
-
-
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -19,6 +17,36 @@
 }
 .right-items img{
   height: 100%;
+}
+.slide-container{
+  position: relative;
+}
+#small-slide{
+  display: none;
+  position: absolute;
+bottom: -100;
+z-index: 99999;
+  width: 100%;
+}
+.slide-cat{
+  padding: 10px 30px;
+  background-color: rgb(44, 43, 43);
+  font-weight: bolder;
+  text-transform: uppercase; 
+}
+.slide-cat li{
+  padding: 10px 0;
+}
+.slide-cat a{
+   color: var(--textColor);
+   text-decoration: none;
+}
+.slide-cat a:hover{
+   color: var(--secondaryColor);
+}
+.slide-cat ul{
+  list-style: none;
+  padding: 0;
 }
 /*** BIG NAV ***/
 
