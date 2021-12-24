@@ -1,7 +1,38 @@
-.burger-menu {
-  display: none;
-  padding-left: 2px;
+/*** SMALL NAV ***/
+
+.small-nav {
+  padding: 10px 20px;
+
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-transform: uppercase;
+  background-color: var(--primaryColor);
+  color: var(--textColor);
 }
+.burger:hover{
+  cursor: pointer;
+}
+.right-items{
+ height: 70PX;
+}
+.right-items img{
+  height: 100%;
+}
+/*** BIG NAV ***/
+
+.big-nav {
+
+
+  display: none;
+  justify-content: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+}
+
 .liste-nav {
   list-style: none;
   display: inline;
@@ -13,15 +44,7 @@
   margin-left: 15px;
   margin-right: 15px;
 }
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  text-transform: uppercase;
-  background-color: var(--primaryColor);
-  color: var(--textColor);
-}
+
 .liste-nav div li {
   display: inline;
   padding: 15px;
@@ -36,6 +59,28 @@
   color: var(--secondaryColor);
   text-decoration: none;
 }
+.big-txt {
+  display: none;
+}
+
+.left-items{
+  display: flex;
+  align-items: center;
+}
+
 /************************** DESKTOP ********************************/
 @media screen and (min-width: 768px) {
+  .big-nav {
+
+
+  display: flex;
+}
+.small-nav{
+  display: none;
+}
+
+@media screen and (min-width: 1160px) {
+  .big-txt {
+    display: inline;
+  }
 }
