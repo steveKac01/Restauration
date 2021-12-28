@@ -36,15 +36,26 @@ img {
   cursor: pointer;
 }
 .vignette {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
+
   height: 50px;
   width: 100%;
   position: absolute;
   bottom: 0;
   transition: all 0.22s ease-in-out;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
+
   align-items: center;
+}
+.vignette-title {
+  padding-bottom: 10px;
+}
+.vignette-description {
+  display: none;
+  text-align: center;
 }
 .img-container {
   position: relative;
@@ -53,10 +64,10 @@ img {
 .img-container img:hover {
   animation: img-scale 1s ease forwards;
 }
-.img-container:hover .vignette {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 25%;
+.vignette-descr:hover img {
+  animation: img-scale 1s ease forwards;
 }
+
 /************** reservation **************/
 #reservation-container {
   color: var(--textColor);
@@ -160,9 +171,17 @@ figcaption {
     object-fit: fill;
     column-gap: 2px;
   }
+  .img-container:hover .vignette {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 45%;
+  }
+  .img-container:hover .vignette-description {
+    display: block;
+    padding: 5px;
+  }
   /**** RESERVATION ****/
   #reservation-container {
-    padding-top: 20px;
+    padding-top: 70px;
   }
   .horaires-form {
     flex-direction: row;
