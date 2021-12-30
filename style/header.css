@@ -57,6 +57,9 @@
 }
 /************************** DESKTOP ********************************/
 @media screen and (min-width: 768px) {
+  .small-slide {
+    display: none;
+  }
   .top-bar {
     padding: 10px 20px;
     display: flex;
@@ -116,5 +119,8 @@
 @media screen and (min-width: 1160px) {
   .big-txt {
     display: inline;
+  }
+  .small-slide {
+    display: none;
   }
 }

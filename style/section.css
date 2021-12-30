@@ -64,9 +64,6 @@ img {
 .img-container img:hover {
   animation: img-scale 1s ease forwards;
 }
-.vignette-descr:hover img {
-  animation: img-scale 1s ease forwards;
-}
 
 /************** reservation **************/
 #reservation-container {

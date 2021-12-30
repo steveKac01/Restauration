@@ -96,11 +96,13 @@ footer ul {
   /* BORDERS */
   .C2 {
     border-top: unset;
+    box-sizing: border-box;
     border-left: var(--textColor) solid 1px;
   }
   .C2,
   .C3 {
     border-bottom: unset;
+    box-sizing: border-box;
     border-right: var(--textColor) solid 1px;
   }
   /* PREFERENCES */
