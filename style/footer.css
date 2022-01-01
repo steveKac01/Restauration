@@ -29,11 +29,7 @@ footer .C1 {
   justify-content: center;
   text-align: center;
 }
-.footer-title {
-  color: var(--secondaryColor);
-  text-align: center;
-  padding: 10px 0;
-}
+
 .copyright {
   color: white;
   font-size: 0.6em;
@@ -64,6 +60,7 @@ footer li {
 footer h4 {
   margin: 0;
   text-transform: uppercase;
+  color: var(--secondaryColor);
 }
 footer img {
   width: 100%;
