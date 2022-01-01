@@ -58,7 +58,7 @@ footer li {
   margin-bottom: 5px;
 }
 footer h4 {
-  margin: 0;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
   color: var(--secondaryColor);
 }
@@ -81,6 +81,9 @@ footer ul {
   }
   .containerByCat {
     flex-grow: 1; /*important*/
+  }
+  footer h4 {
+    margin: 0;
   }
   .C1,
   .C2,
