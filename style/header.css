@@ -1,4 +1,7 @@
 /*** SMALL NAV ***/
+.hide {
+  display:none;
+}
 .big-nav {
   display: none;
 }
@@ -23,8 +26,8 @@
 .slide-container {
   position: relative;
 }
+
 #small-slide {
-  display: none;
   position: absolute;
   bottom: -100;
   z-index: 99999;
@@ -88,7 +91,6 @@
   .right-items {
     margin-right: 15px;
   }
-
   .liste-nav {
     list-style: none;
     display: inline;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restauration</title>
     <link rel="stylesheet" href="style/main.css" />
-    <script src="js/script.js"></script>
+  
     <script src="https://kit.fontawesome.com/b760ce3519.js"></script>
   </head>
   <body>
@@ -14,7 +14,7 @@
     <header id="top">
 <div class="small-nav">
   <div class="top-bar">
-<div class="left-items"><div class="burger" onclick="slideNav()"><i class="fas fa-bars fa-2x"></i ></div>
+<div class="left-items"><div class="burger"><i class="fas fa-bars fa-2x"></i ></div>
 </div>
 <div class="right-items"><a href="index.html"><img src="img/logo.png" alt="" ></a></div>
 
@@ -58,20 +58,20 @@
             </div>
 </div>
 <div class="slide-container">
-<div id="small-slide">
+<div id="small-slide" class="hide">
   <div class="slide-cat">
     <ul>
-      <li><a href="#plats-container" onclick="slideNav()">Menus</li></a>
+      <li><a href="#plats-container">Menus</li></a>
       <hr>
-      <li><a href="#reservation-container" onclick="slideNav()">Réservations</li></a>
+      <li><a href="#reservation-container">Réservations</li></a>
         <hr>
-      <li><a href="#reservation-container" onclick="slideNav()">Horaires</li></a>
+      <li><a href="#reservation-container">Horaires</li></a>
         <hr>
-      <li><a href="#aboutUS-container" onclick="slideNav()">Ou sommes nous</li></a>
+      <li><a href="#aboutUS-container">Ou sommes nous</li></a>
         <hr>
-      <li><a href="#team" onclick="slideNav()">Notre équipe</li></a>
+      <li><a href="#team">Notre équipe</li></a>
         <hr>
-      <li><a href="#footer" onclick="slideNav()">Réseaux sociaux</li></a>
+      <li><a href="#footer">Réseaux sociaux</li></a>
        
     </ul>
   </div>
@@ -283,7 +283,11 @@
         });
       });
 
-     
+      
+
+
+
     </script>
+      <script src="js/script.js"></script>
   </body>
 </html>
