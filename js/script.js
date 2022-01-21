@@ -13,13 +13,20 @@ function showHide() {
   console.log("trytohide");
 }
 
-const mQ = window.matchMedia("(min-width: 768px)");
+//Event media query
 
-mQ.addListener(function (x) {
-  if (x.matches) {
+function addMQListener(mq, callback) {
+  if (mq.addEventListener) {
+    mq.addEventListener("change", callback);
+  } else {
+    mq.addListener(callback);
+  }
+}
+
+addMQListener(window.matchMedia("(min-width: 768px)"), (event) => {
+  if (event.matches) {
     if (!slideDisplay.classList.contains("hide")) {
       slideDisplay.classList.toggle("hide");
     }
-  } else {
   }
 });
